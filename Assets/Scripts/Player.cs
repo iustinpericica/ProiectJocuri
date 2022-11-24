@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 
         moveDelta = new Vector3(x, y, 0);
 
-        //Swap in functie de ce directie mergem
+        //Swap in functie pe ce directie mergem
         if (moveDelta.x > 0)
             transform.localScale = Vector3.one;
         else if (moveDelta.x < 0)
