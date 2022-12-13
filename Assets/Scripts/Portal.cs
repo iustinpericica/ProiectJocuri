@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal : Collidable
-{
+
+public class Portal : Collidable {
 
     public string[] sceneNames;
 
@@ -13,7 +13,6 @@ public class Portal : Collidable
         if (coll.name == "Player")
         {
             GameManager.instance.SaveState();
-            //teleportam jucatorul
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             SceneManager.LoadScene(sceneName);
         }
